@@ -1,12 +1,58 @@
+.venv/
 .venv
+venv/
 __pycache__/
 *.py[cod]
 *.pyd
+*.so
 .Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage/
+htmlcov/
+.tox/
+.cache/
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Git
+.git/
+.gitignore
+.github/
+
+# Env / secrets
 .env
 .env.*
-.git
-.github
-staticfiles/
+
+# Local databases / media
 db.sqlite3
+*.sqlite3
+media/
+
+# Django static artifacts
+staticfiles/
+
+# Tests / misc
 tests/
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Python packaging extras
+*.egg-info/
+build/
+dist/
+
+# Node (au cas où, pour bloquer ce qui n'est pas utile côté conteneur)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
