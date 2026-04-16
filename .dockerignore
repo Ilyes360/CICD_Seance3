@@ -56,3 +56,6 @@ yarn-error.log*
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+
+# Trivy binaire local (ne pas le mettre dans l'image applicative)
+trivy-bin/

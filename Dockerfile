@@ -14,7 +14,6 @@ COPY requirements*.txt ./
 
 RUN python -m venv /opt/venv \
     && . /opt/venv/bin/activate \
-    && pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
 
 
